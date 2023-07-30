@@ -15,9 +15,9 @@
       <inertia
         ixx="21.308"
         ixy="3.2909E-08"
-        ixz="4.2875E-16"
+        ixz="4.9251E-16"
         iyy="21.308"
-        iyz="-5.9757E-16"
+        iyz="-5.9676E-16"
         izz="36.305" />
     </inertial>
     <visual>
@@ -48,17 +48,17 @@
     name="l1">
     <inertial>
       <origin
-        xyz="2.06E-05 -0.22592 0.1524"
+        xyz="-9.8841E-05 1.3203E-07 0.03302"
         rpy="0 0 0" />
       <mass
         value="103.33" />
       <inertia
         ixx="2.3418"
-        ixy="0.00010868"
-        ixz="6.0067E-07"
-        iyy="1.6131"
-        iyz="1.2951E-06"
-        izz="1.8272" />
+        ixy="-6.0067E-07"
+        ixz="0.00010868"
+        iyy="1.8272"
+        iyz="-1.2951E-06"
+        izz="1.6131" />
     </inertial>
     <visual>
       <origin
@@ -88,17 +88,17 @@
     name="j1"
     type="revolute">
     <origin
-      xyz="0 0.1524 0.59921"
-      rpy="1.5708 0 0" />
+      xyz="0.00011944 0 0.34027"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="l1" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
     <limit
       lower="0"
-      upper="3.142"
+      upper="3.1412"
       effort="300"
       velocity="3" />
   </joint>
@@ -106,17 +106,17 @@
     name="l2">
     <inertial>
       <origin
-        xyz="4.3999E-12 -0.1558 0.10012"
+        xyz="4.3999E-12 0.0014837 0.17703"
         rpy="0 0 0" />
       <mass
         value="141.23" />
       <inertia
         ixx="2.7406"
-        ixy="-3.9887E-10"
-        ixz="9.097E-10"
-        iyy="1.1047"
-        iyz="-0.011982"
-        izz="2.7555" />
+        ixy="-9.097E-10"
+        ixz="-3.9887E-10"
+        iyy="2.7555"
+        iyz="0.011982"
+        izz="1.1047" />
     </inertial>
     <visual>
       <origin
@@ -146,14 +146,14 @@
     name="j2"
     type="revolute">
     <origin
-      xyz="0 0.254 0.0508"
+      xyz="-0.00011944 0 0.18012"
       rpy="0 0 0" />
     <parent
       link="l1" />
     <child
       link="l2" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 -1 0" />
     <limit
       lower="-1.57"
       upper="1.57"
@@ -164,17 +164,17 @@
     name="l3">
     <inertial>
       <origin
-        xyz="0 -0.0352868391760749 0.152407642498591"
+        xyz="-0.31293 -7.6425E-06 -0.064681"
         rpy="0 0 0" />
       <mass
-        value="339.624762377846" />
+        value="339.62" />
       <inertia
-        ixx="16.1407171180524"
-        ixy="8.62670971937533E-16"
-        ixz="-8.54402881463985E-17"
-        iyy="5.11372188592373"
-        iyz="-0.000699793193465693"
-        izz="14.5610784866681" />
+        ixx="5.1137"
+        ixy="-0.00069979"
+        ixz="-8.6937E-16"
+        iyy="14.561"
+        iyz="8.2796E-17"
+        izz="16.141" />
     </inertial>
     <visual>
       <origin
@@ -187,7 +187,7 @@
       <material
         name="">
         <color
-          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+          rgba="0.77647 0.75686 0.73725 1" />
       </material>
     </visual>
     <collision>
@@ -204,18 +204,18 @@
     name="j3"
     type="revolute">
     <origin
-      xyz="-0.34822 0 -0.0508"
-      rpy="0 0 1.5708" />
+      xyz="0 0 0.39751"
+      rpy="0 0 0" />
     <parent
       link="l2" />
     <child
       link="l3" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 -1 0" />
     <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="200"
+      lower="0"
+      upper="3.142"
+      effort="300"
       velocity="3" />
   </joint>
 </robot>
